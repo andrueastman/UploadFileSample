@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltimateConsoleApp", "UltimateConsoleApp\UltimateConsoleApp.csproj", "{CED24C92-45BE-4091-9D8B-CD5E38750DB3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Graph", "msgraph\src\Microsoft.Graph\Microsoft.Graph.csproj", "{68300ED6-27FB-4690-AD43-994E25AC683A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CED24C92-45BE-4091-9D8B-CD5E38750DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CED24C92-45BE-4091-9D8B-CD5E38750DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CED24C92-45BE-4091-9D8B-CD5E38750DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68300ED6-27FB-4690-AD43-994E25AC683A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68300ED6-27FB-4690-AD43-994E25AC683A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68300ED6-27FB-4690-AD43-994E25AC683A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68300ED6-27FB-4690-AD43-994E25AC683A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

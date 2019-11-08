@@ -1,10 +1,15 @@
-﻿using System;
+﻿using Microsoft.Graph;
+using Microsoft.Identity.Client;
+using System;
+using System.IO;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
 
 namespace UltimateConsoleApp
 {
     class Program
     {
-        static async Task Main(string[] args)
+        static async Task Main()
         {
             /* Do the auth stuff first */
             IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
@@ -21,10 +26,6 @@ namespace UltimateConsoleApp
                 requestMessage.Headers.Authorization = new AuthenticationHeaderValue("bearer", authResult.AccessToken);
                 return Task.FromResult(0);
             });
-            // Create a native client using the factory
-            //            var handlers = GraphClientFactory.CreateDefaultHandlers(delegatingAuthProvider);
-            //            var client = GraphClientFactory.Create(handlers);
-            //BaseClient baseClient = new BaseClient("https://graph.microsoft.com/v1.0/",client);
 
             GraphServiceClient graphClient = new GraphServiceClient(delegatingAuthProvider);
             Stream content = await graphClient.Sites.Root.Drive.Items["01WICLWWAFK4PWP2STYNCZOBWQE7PSNSQU"].Content.Request().GetAsync();
