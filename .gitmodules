@@ -1,0 +1,3 @@
+[submodule "msgraph"]
+	path = msgraph
+	url = https://github.com/microsoftgraph/msgraph-sdk-dotnet.git
